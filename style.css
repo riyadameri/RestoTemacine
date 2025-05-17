@@ -297,41 +297,27 @@ main {
   font-size: 1.1rem;
 }
 /* أزرار إضافة إلى السلة */
-/* تخصيص أزرار إضافة إلى السلة */
 .add-to-cart-btn {
-  --bs-btn-bg: hsl(0, 100%, 71%);
-  --bs-btn-border-color: #ff6b6b;
-  --bs-btn-hover-bg: #ff5252;
-  --bs-btn-hover-border-color: #ff5252;
-  --bs-btn-active-bg: #e74c3c;
-  --bs-btn-active-border-color: #e74c3c;
-  --bs-btn-font-weight: 500;
-  transition: all 0.3s ease;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  transition: var(--transition);
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
-/* زر التفاصيل الكبيرة */
-#addToCartFromDetail {
-  --bs-btn-bg: #2ed573;
-  --bs-btn-border-color: #2ed573;
-  --bs-btn-hover-bg: #25c164;
-  --bs-btn-hover-border-color: #25c164;
-  padding: 0.5rem 2rem !important;
-}
-
-/* تأثيرات خاصة */
-.btn:active {
-  transform: scale(0.98);
-}
-
-/* أيقونة السلة في الزر */
-.fa-cart-plus {
-  font-size: 0.9em;
-}
 .add-to-cart-btn:hover {
-  background-color: #52ffa9;
+  background-color: #ff5252;
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
