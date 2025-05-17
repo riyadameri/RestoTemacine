@@ -241,7 +241,7 @@ orderForm.addEventListener('submit', async (e) => {
                                         <button class="quantity-btn plus-btn" data-id="${food._id}">+</button>
                                     </div>
                                 ` : `
-                                    <button class="btn btn-success" data-id="${food._id}">أضف إلى السلة</button>
+                                    <button class="add-to-cart" data-id="${food._id}">أضف إلى السلة</button>
                                 `}
                             </div>
                         </div>
